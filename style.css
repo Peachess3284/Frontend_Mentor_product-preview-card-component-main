@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TYPOGRAPHY */
+
+:root {
+    --darkcyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --verydarkblue: hsl(212, 21%, 14%); 
+    --darkgrayishblue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 14px;
+}
+
+.product, .product-description, .add-product-button {
+    font-family: "Montserrat";
+}
+
+.product-name, .product-new-price, .product-old-price {
+    font-family: "Fraunces";
+}
+
+/* */ 
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;    
+    align-items: center;
+}
+
+.outer_container {
+    width: 1440px;
+    background-color: var(--cream);    
+    box-shadow: 5px 5px 20px grey;
+    display: flex;
+    padding: 10em;
+    justify-content: center;
+
+    
+}
+
+.inner_container {
+    display: flex;    
+    max-width: 50%;    
+    background-color: var(--white);
+    border: 1px solid red;   
+}
+
+
+/* LEFT SIDE */
+
+
+
+
+.left-side {
+    width: 100%;
+    object-fit: cover;
+}
+
+.left-side img {
+    max-width: 100%;
+}
+
+
+/* RIGHT SIDE */
+
+.right-side {
+    width: 100%;
+    padding: 2em;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.product {
+    color: var(--darkgrayishblue);
+    text-transform: uppercase;
+    letter-spacing: .3em;
+}
+
+.product-name {
+    color: var(--verydarkblue);
+    font-size: 2.5em;
+}
+
+.price {
+    display: flex;    
+    align-items: center;
+}
+
+.product-new-price {
+    color: var(--darkcyan);
+    font-size: 2em;
+    margin-right: 1em;
+}
+
+.product-old-price {
+    color: var(--darkgrayishblue);
+    text-decoration: line-through;
+}
+
+.add-product-button {
+    background: var(--darkcyan);
+    padding: 1em;
+    border-radius: 8px;
+    border: 1px white;
+    color: var(--white);    
+}
+
+.add-product-button span {
+    font-weight: 700;
+    vertical-align: top;
+    margin-left: .5em;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* MEDIA QUERIES */    
+
